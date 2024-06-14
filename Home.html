@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAMUN</title>
+    <link rel="icon" type="image/png" href="/imgs/small_logo.png">
+</head>
+<style>
+    body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:768px) {
+    .Nav_List{
+    flex-direction: column;
+    gap:5px;
+    
+    }
+    .aamun_Heading{
+        font-size: 57px;
+    }
+   
+    .Row-2{
+        flex-direction: column;
+        gap:5px;
+    }
+    .right{
+     display: grid;
+     margin-left:10px;
+     margin-right: 10px;
+    
+    }
+   
+}
+
+.img_above_nav{
+    position: relative;
+    max-width:100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    opacity: 60%;
+}
+.Image_1{
+    position: relative;
+    width:100%;
+    height: 100%;
+    margin-top: 15px;
+    opacity: 100%;
+    border-radius: 50%;
+}
+.Image{
+    width:120px;
+}
+
+.main_bg_image{
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width:100%px;
+
+}
+.bigpicture{
+    width:100%;
+    height: 100%;
+}
+.main_div{
+    background-image: url("Team_image.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width:100%;
+    max-height: 100%;
+
+}   
+.why_not{
+    background-color: black;
+    opacity: 85%;
+    
+}
+ .Nav_List{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    color:white;
+    padding-left: 0px;
+
+}
+
+.Item{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration:none;
+
+}
+.a-nav{
+    text-decoration: solid;
+    list-style-type: none;
+    color:white;
+    padding-bottom: 10px;
+}
+.Item:hover{
+    cursor:pointer;
+    color:rgb(255, 162, 0);
+}
+
+.Main_heading, .slogan, .dates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Main_heading{
+    color:green;
+    font-size: 50px;
+    margin: 0px;
+}
+.slogan{
+    font-style:bold;
+    font-size: 6vh;
+}
+.dates{
+    font-weight:bolder;
+    font-size: x-large;
+    margin-bottom: -2px;
+}
+/*
+.Item a{
+    color:white;
+    text-decoration: none;
+} */
+.Item a:hover{
+    color:rgb(252, 161, 3);
+}
+.Row-2{
+    display: flex;
+    background-color: black;
+    color: white;
+    margin-top: 2px;
+}
+.sec_gen_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sec_gen_paragraph{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap:20px;
+}
+
+.Sec_gen_image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+.SecretaryGeneral{
+    width:100%;
+    height: 100%;
+    border-radius: 5px; 
+}
+.col-lg-2{
+    margin-top: 35px;
+}
+.des{
+    color: rgb(255, 255, 255);
+}
+
+.right{
+    display: grid;
+    margin-right: 10px;
+
+}
+.left{
+    margin-left: 10px;
+}
+
+.Row-3{
+    background-color: black;
+    color:white;
+    
+}
+.Gallery{
+    margin-bottom: 60px;
+}
+.Gallery_Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    margin: -2px 0px 0px 0px;
+  }
+.des-2{
+    margin-bottom: 145px;
+}
+.images{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.Image_scroller{
+    position: relative;
+    width: 40%;  
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    height: 150px;
+}
+
+.kill_me{    
+    padding: 0px;
+    margin: 0px;
+}
+.bottom_above{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peeaya{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.journey_heading{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.followRequest{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.Footer_part{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 50px;
+  
+}
+.social_medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:35px;
+    
+}
+.social_image{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+} 
+.line{
+    width:75%;
+    height: 1px;
+    background-color:rgb(252, 161, 3);
+}
+.line_division{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.row-5{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.final_image{
+    border-radius:50%;
+    width:100px;
+}
+
+
+
+/*Gpt maal*/
+.Dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    top:25px;
+    
+   
+}
+
+.Item-2:hover .Dropdown {
+    display: block;
+    border-radius: 50px;
+   
+
+}
+
+.Dropdown li a {
+    display: block;
+    background-color: #000000;
+    padding: 5px;
+    color:rgb(252, 161, 3);
+    text-decoration: none;
+    padding-bottom:15px;
+    padding-top:15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.5s ease-in;
+
+  
+}
+
+.Dropdown a:hover {
+    background-color: #ff8c00;
+    color:white;
+    
+
+}
+</style>
+<body>
+    <div class="main_div">
+    <div class="main_bg_image">  
+    </div>
+    <div class="why_not">
+    <div class="img_above_nav">
+        <div class="Image">
+            <img class="Image_1" src="/imgs/small_logo.png" alt="">
+        </div>
+    </div>
+    
+    <nav class="Navbar">
+        <ul class="Nav_List">
+            <li class="Item Item-1">
+                <a class="a-nav" href="Home.html">Home</a>
+            </li>
+            <li class="Item Item-2">
+                <a class="a-nav">Register</a>
+                <ul class="Dropdown">
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2If-oWsWhC6vqJyJTJAw685CgeNyyAbzWDGKY8Oc-_bgPLQ/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link">As a Delegate</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe-l3yi2Tt-kKehbL1-hT-k3x6WQ3vvp_Cw8Q4Rym9Tjb_iIA/viewform?usp=sf_link">As a Delegation</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div class="Headings">
+        <div class="Main_heading">
+            <h1 class="aamun_Heading" style="color:rgb(252, 161, 3)">AAMUN 5.0</h1>
+        </div>
+        <div class="slogan">
+            <span class="slogan_text" style="color:rgb(252, 161, 3); font-weight: bolder; margin-top: 150px;">Debate For All</span>
+        </div>
+        <div class="dates">
+            <h3 style="color:rgb(252, 161, 3); padding-bottom: 40px; margin-bottom: 170px;">17th August - 20th August</h3>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="Row-2">
+    <div class="col-lg-2 left">
+        <div class="welcome_heading">
+            <h2 class="sec_gen_heading">Letter from the Secretary General</h2>
+        </div>
+        <div class="sec_gen_paragraph">
+            <p class="kill_me" style="font-size: 18px;">AAMUN is not merely an initiative; it is a vision—a vision of inclusivity, accessibility, and academic excellence. We firmly believe that everyone, regardless of background, should have equal access to opportunities. Our commitment to inclusivity extends beyond the confines of the conference; it is a cornerstone of our growing community—a community united by passion and a shared goal of personal growth for the betterment of society.</p>
+            <p class="kill_me" style="font-size: 18px;">In a society where socio-economic classes often dictate one's opportunities, AAMUN stands as a beacon of hope and opportunity for all. Our mission is clear: to provide a platform where everyone can thrive and contribute towards building a better world.</p>
+        </div>
+        <div class="Regards_section">
+            <p>Regards</p>
+            <p>Ms. Eisha Asad</p>
+            <p>Secretary General</p>
+        </div>
+    </div>
+    <div class="col-lg-2 right">
+        <div class="Sec_gen_image">
+            <img class="SecretaryGeneral" src="team/Syeda Eisha Asad.jpg" alt=""> 
+        </div>
+        <div class="dets">
+            <p class="des des-1">Ms. Eisha Asad</p>
+            <p class="des des-2">Secretary General</p>
+        </div>
+    </div>
+   
+</div> 
+<div class="Row-3">
+    <!-- <div class="row-lg-6 top">
+        <div class="Gallery">
+            <h2 class="Gallery_Heading">Gallery</h2>
+        </div>
+    </div>
+    <div class="bottom_above">
+        <div class="row-lg-6 bottom">
+        <div class=" buttons leftbutton">
+            <button>&#9664;</button>
+        </div>
+        <div class="Image_scroller">
+            <div class="scrollers"><img class="images" src="team/Syeda Eisha Asad.jpg" alt=""> </div>
+        </div>
+        <div class="buttons right-button">
+            <button>&#10140;</button>
+        </div> -->
+   
+<div class="Footer_part">
+    <div class="journey_heading">
+        <h2 style="font-size: 38px; color:rgb(252, 161, 3)">Take a journey With Us On Social Media</h2>
+    </div>
+    <div class="followRequest">
+        <p style="font-size: 20px; color:rgb(252, 161, 3)">Follow us on Social Media for updates, deadlines, important infromation, and other fun content!</p>
+    </div>
+    <div class="social_medias">
+        <div class="social Items_1">
+      <a href="https://instagram.com/aamun_2023?igshid=MzRlODBiNWFlZA=="><img class="social_image" src="final_insta.png" alt=""></a>
+    </div>
+    <div class="social Items_2">
+       <a href="https://twitter.com/AAMUN2023?t=ePltYeGqqnW-F1syKFtwfA&s=09"><img class="social_image" style="background-color: white;" src="twitter.png" alt=""></a> 
+    </div>
+    <div class="social Items_3">
+        <a href="https://www.youtube.com/@aamun2023"><img class="social_image" src="yt.png" alt=""></a> 
+    </div>
+    <div class="social Items_4">
+        <a href="https://www.facebook.com/aamun2022?mibextid=ZbWKwL"><img class="social_image" src="fb_once_more.png" alt=""></a>
+    </div>
+</div>
+<div class="line_division">
+    <div class="line"></div>
+</div>
+    <div class="row-5">
+        <div class="col-lg-6 left_one">
+            <h3 style="color:rgb(252, 161, 3)">Aam Aadmi Model United Nations</h3>
+        </div>
+        <div class="col-lg-6 right_one">
+            <img class="final_image" src="/imgs/small_logo.png" alt="">
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- <script src="Home.js"></script> -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
